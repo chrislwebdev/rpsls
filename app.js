@@ -34,13 +34,16 @@ const gameRules = [
   }),
 ];
 
-const gameScoreNumber = document.getElementById("score-actual");
 let gameScore = 0;
 
+const gameScoreNumber = document.getElementById("score-actual");
+
 window.addEventListener("load", () => {
-  const rpslsScore = sessionStorage.getItem("rpsls-score");
-  console.log(rpslsScore);
-  gameScoreNumber.innerHTML = rpslsScore;
+  gameScoreNumber.innerHTML = gameScore;
+  if (sessionStorage.getItem("rpsls-score")) {
+    const rpslsScore = sessionStorage.getItem("rpsls-score");
+    gameScoreNumber.innerHTML = rpslsScore;
+  }
 });
 
 function gameCheck() {
