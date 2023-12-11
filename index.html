@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- 1. Score -->
+      <div class="score-outer-container">
+        <img src="./images/logo-bonus.svg" alt="" class="game-name" />
+        <div class="score-container">
+          <p class="score-title">Score</p>
+          <p id="score-actual">0</p>
+        </div>
+      </div>
+
+      <!-- 2. Game buttons -->
+      <div class="game-buttons-outer-container">
+        <form class="game-buttons-container">
+          <button class="game-btn scissors-btn" data-button="scissors">
+            <div class="game-btn-img-container">
+              <img src="./images/icon-scissors.svg" alt="" class="btn-img" />
+            </div>
+          </button>
+          <button class="game-btn paper-btn" data-button="paper">
+            <div class="game-btn-img-container">
+              <img src="./images/icon-paper.svg" alt="" class="btn-img" />
+            </div>
+          </button>
+          <button class="game-btn rock-btn" data-button="rock">
+            <div class="game-btn-img-container">
+              <img src="./images/icon-rock.svg" alt="" class="btn-img" />
+            </div>
+          </button>
+          <button class="game-btn lizard-btn" data-button="lizard">
+            <div class="game-btn-img-container">
+              <img src="./images/icon-lizard.svg" alt="" class="btn-img" />
+            </div>
+          </button>
+          <button class="game-btn spock-btn" data-button="spock">
+            <div class="game-btn-img-container">
+              <img src="./images/icon-spock.svg" alt="" class="btn-img" />
+            </div>
+          </button>
+        </form>
+
+        <!-- 3. Result -->
+        <div class="game-result-outer-container">
+          <div class="game-result-container">
+            <div class="game-choice-btns">
+              <div class="player-choice-container">
+                <div id="player-choice" class="player-choice-btn"></div>
+                <p class="player-choice-pick">You picked</p>
+              </div>
+
+              <div class="computer-choice-container">
+                <div id="computer-choice" class="computer-choice-btn"></div>
+                <p class="computer-choice-pick">The house picked</p>
+              </div>
+            </div>
+            <div class="wld-container">
+              <h2 class="game-result">You win!</h2>
+              <button class="play-again-btn">Play again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Game rules -->
+      <div class="game-rules-outer-container">
+        <div class="game-rules-modal-container">
+          <h3 class="game-rules-titles">Rules</h3>
+          <img
+            src="./images/image-rules-bonus.svg"
+            alt=""
+            class="game-rules-img"
+          />
+          <button class="game-rules-close-btn">
+            <img
+              src="./images/icon-close.svg"
+              alt=""
+              class="game-rules-close-img"
+            />
+          </button>
+        </div>
+        <button class="game-rules-open-btn">Rules</button>
+      </div>
+      <div class="modal-darken"></div>
+
+      <script src="./app.js"></script>
+    </main>
+  </body>
+</html>
